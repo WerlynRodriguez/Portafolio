@@ -101,9 +101,9 @@ export default function App() {
     }
 
     if (loading) return (
-        <dialog className="load-screen" >
+        <div className="load-screen" >
             <div className="loading"/>
-        </dialog>
+        </div>
     )
 
     return (<>

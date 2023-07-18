@@ -130,15 +130,11 @@ button, .button {
 }
 
 .load-screen {
-  outline: none;
-  border: none;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bgPrimaryColor);
 
   &::-webkit-backdrop {
-    background-color: #121824;
-  }
-
-  &::backdrop {
     background-color: #121824;
   }
 
@@ -182,12 +178,6 @@ button, .button {
             backdrop-filter: blur(10px);
     /* BackgroundcolorSecondary with 0.5 opacity */
     background-color: rgba(250, 250, 250, 0.5);
-  }
-
-  .load-screen {
-    &::backdrop {
-      background-color: #eaeaea;
-    }
   }
 }
 
