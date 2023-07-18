@@ -2,7 +2,8 @@ import i18next from "i18next"
 import { initReactI18next } from "react-i18next"
 import LanguageDetector from "i18next-browser-languagedetector"
 
-export const lngs: { [key: string]: string } = { // Languages
+/** Languages codes */
+export const lngs: { [key: string]: string } = {
     es: 'Español',
     en: 'English',
     ja: '日本語',
