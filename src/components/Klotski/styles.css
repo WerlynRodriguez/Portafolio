@@ -23,12 +23,22 @@
         border-radius: var(--borderRadius);
         background-color: var(--bgSecondaryColor);
 
+        border: 2px rem solid transparent;
+        -webkit-transition: border-color 0.2s ease-in-out;
+        -moz-transition: border-color 0.2s ease-in-out;
+        -o-transition: border-color 0.2s ease-in-out;
+        transition: border-color 0.2s ease-in-out;
+
         cursor: pointer;
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none;
         -webkit-tap-highlight-color: transparent;
+
+        &:hover {
+            border-color: var(--accentColor);
+        }
 
         &[data-text]::after {
             content: attr(data-text);
