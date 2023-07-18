@@ -76,7 +76,7 @@ export default function App() {
             .then((res) => res.json())
             .then((links) => setLinks(links))
 
-            await loadProjectsLang(i18n.language, abortController)
+            await loadProjectsLang(i18n.resolvedLanguage ?? 'en', abortController)
         }
 
         load()
