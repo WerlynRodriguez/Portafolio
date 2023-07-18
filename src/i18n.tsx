@@ -52,6 +52,8 @@ i18next
 
                 byGit: 'GitHub statistics',
 
+                Socials: 'Socials',
+
                 Contact: 'Contact',
                 ContactBanner: ['Contact me', 'Let\'s talk', 'Hire me', 'Let\'s work together'],
 
@@ -73,6 +75,8 @@ i18next
 
                 byGit: 'GitHubの統計',
 
+                Socials: 'ソーシャル',
+
                 Contact: '連絡先',
                 ContactBanner: ['連絡してください', '話しましょう', '雇ってください', '一緒に働きましょう'],
 
@@ -92,6 +96,8 @@ i18next
                 Projects: 'Projetos',
                 
                 byGit: 'Estatísticas do GitHub',
+
+                Socials: 'Redes sociais',
 
                 Contact: 'Contato',
                 ContactBanner: ['Entre em contato comigo', 'Vamos conversar', 'Contrate-me', 'Vamos trabalhar juntos'],
