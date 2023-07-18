@@ -1,7 +1,7 @@
 import { CSSProperties } from "react"
 
-export const makeSrc = (name: string) => 
-`https://cdn.simpleicons.org/${name}`
+export const makeSrc = (name: string, themed: boolean) => 
+`https://cdn.simpleicons.org/${name}` + (themed ? '/1a1a1a/b0b3b8' : '')
 
 /** This icon component is used to display icons from the simpleicons.org website. */
 export default function Icon({
@@ -9,6 +9,7 @@ export default function Icon({
     title,
     size = 2,
     style,
+    themed = false,
     onClick
 } : {
     /** The name of the icon on the simpleicons.org website */
@@ -19,13 +20,15 @@ export default function Icon({
     size?: number
     /** The style of the icon */
     style?: CSSProperties
+    /** If true, the icon will be themed with the current color */
+    themed?: boolean
     /** The function to call when the icon is clicked */
     onClick?: () => void
 }) {
     return (
     <img
         className="icon"
-        src={makeSrc(name)}
+        src={makeSrc(name,themed)}
         alt={name}
         onClick={onClick}
         title={title}

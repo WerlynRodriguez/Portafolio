@@ -27,7 +27,7 @@ export default function Card({ name, desc, skill, url }: {
                         target="_blank" 
                         rel="noreferrer"
                     >
-                        <Icon name={key} size={1}/> {key}
+                        <Icon name={key} size={1} themed/> {key}
                     </a>
                 ))}
             </div>

@@ -23,7 +23,7 @@
         border-radius: var(--borderRadius);
         background-color: var(--bgSecondaryColor);
 
-        border: 2px rem solid transparent;
+        border: 2px solid transparent;
         -webkit-transition: border-color 0.2s ease-in-out;
         -moz-transition: border-color 0.2s ease-in-out;
         -o-transition: border-color 0.2s ease-in-out;
@@ -37,7 +37,7 @@
         -webkit-tap-highlight-color: transparent;
 
         &:hover {
-            border-color: var(--accentColor);
+            border-color: var(--accentColorLight);
         }
 
         &[data-text]::after {
