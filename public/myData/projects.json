@@ -1,0 +1,43 @@
+[
+    {
+        "skill": ["AntDesign", "CSS3", "JSONWebTokens", "React", "ReactRouter", "Vite"],
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/NancurunaisaFrontEnd"
+        }
+    },
+    {
+        "skill": ["CSS3", "i18next", "React", "TypeScript", "Vite"],
+        "url": {
+        }
+    },
+    {
+        "skill": ["Expo", "i18next", "React", "TypeScript", "Yarn"],
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/Rimember"
+        }
+    },
+    {
+        "skill": ["Expo", "JavaScript", "Npm", "React", "Redux"],        
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/ChallengeDay"
+        }
+    },
+    {
+        "skill": ["CSS3", "Express", "Node.js", "React", "ReactRouter", "Socket.io"],
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/BancoPoly"
+        }
+    },
+    {
+        "skill": ["CSS3", "React", "ReactRouter"],
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/Landing_OnShopLine"
+        }
+    },
+    {
+        "skill": ["CSS3", "Express", "Node.js", "React", "ReactRouter", "Socket.io"],
+        "url": {
+            "github": "https://github.com/WerlynRodriguez/Byond"
+        }
+    }
+]

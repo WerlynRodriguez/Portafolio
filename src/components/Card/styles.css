@@ -1,0 +1,46 @@
+.card {
+    width: 100%;
+    max-width: 24rem; 
+    padding: var(--padding);
+    
+    border-radius: var(--borderRadius);
+    background-color: var(--bgSecondaryColor);
+    -webkit-tap-highlight-color: transparent;
+
+    & h3 { margin: 0; color: var(--ftPrimaryColor); }
+
+    & p {
+        color: var(--ftSecondaryColor);
+        font-size: 0.8rem;
+        margin: 0;
+        text-align: justify;
+        line-height: 1.2rem;
+        -webkit-transition-delay: 0.2s;
+             -o-transition-delay: 0.2s;
+                transition-delay: 0.2s;
+    }
+
+    & .card_skills, & .card_url {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    & .card_url {
+        margin-top: 1rem;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        
+        & .button {
+            width: 100%;
+        }
+    }
+}
