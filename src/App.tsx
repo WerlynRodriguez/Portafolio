@@ -26,6 +26,7 @@ export default function App() {
     const  { i18n } = useTranslation()
 
     const [loading, setLoading] = useState(true)
+    const loadDialog = useRef<HTMLDialogElement>(null)
 
     const [shapeCount, setShapeCount] = useState(1)
     const [easterStatus, setEasterStatus] = useState(Array(countEaster).fill(false))
@@ -54,6 +55,7 @@ export default function App() {
 
     // First render, fecth skills icons and other info withouth language
     useEffect(() => {
+        loadDialog.current?.showModal()
         const abortController = new AbortController()
 
         async function load(){
@@ -95,22 +97,26 @@ export default function App() {
     /** On click a language in dropdown */
     const onClickLang = (lng: string) => {
         setLoading(true)
+        loadDialog.current?.showModal()
 
         loadProjectsLang(lng, new AbortController())
         i18n.changeLanguage(lng)
     }
 
-    if (loading) return (
-        <div className="load-screen" >
-            <div className="loading"/>
-        </div>
-    )
+    /** On load main */
+    const onLoadMain = useCallback(() => {
+        if (!loading) loadDialog.current?.close()
+    }, [loading])
 
     return (<>
 
+    <dialog ref={loadDialog} className="load-screen">
+        <div className="loading"/>
+    </dialog>
+
     <LiquidShapes count={shapeCount}/>
 
-    <main>
+    <main onLoad={onLoadMain}>
         <section id='banner'>
             <h2> {tr('BannerQuest')} </h2>
             <p> {tr('BannerTitle')} </p>
