@@ -57,7 +57,8 @@ export default function App() {
 
         async function load(){
             // I decided to use fetch instead of import because, i can easily update data file
-            await fetch('/myData/allSkills.json', { signal: abortController.signal })
+            await fetch('https://raw.githubusercontent.com/WerlynRodriguez/Portafolio/main/dist/myData/allSkills.json', 
+            { signal: abortController.signal })
             .then((res) => res.json())
             .then((skills) => setAllSkills(skills))
 
