@@ -15,9 +15,12 @@ import Dropdown from "./components/Dropdown"
 
 import { ILang } from "./components/Icon"
 
+import urlData from './urlData'
+
 import './App.css'
 
 const countEaster = 5
+const getUrl = (file: string, folder = '') => `${urlData}myData${folder}/${file}.json`
 
 export default function App() {
     const  { i18n } = useTranslation()
@@ -57,20 +60,19 @@ export default function App() {
 
         async function load(){
             // I decided to use fetch instead of import because, i can easily update data file
-            await fetch('https://raw.githubusercontent.com/WerlynRodriguez/Portafolio/main/dist/myData/allSkills.json', 
-            { signal: abortController.signal })
+            await fetch(getUrl('allSkills'), { signal: abortController.signal })
             .then((res) => res.json())
             .then((skills) => setAllSkills(skills))
 
-            await fetch('/myData/topSkills.json', { signal: abortController.signal })
+            await fetch(getUrl('topSkills'), { signal: abortController.signal })
             .then((res) => res.json())
             .then((skills) => setTopSkills(skills))
 
-            await fetch('/myData/projects.json', { signal: abortController.signal })
+            await fetch(getUrl('projects'), { signal: abortController.signal })
             .then((res) => res.json())
             .then((projects) => setProjects(projects))
 
-            await fetch('/myData/links.json', { signal: abortController.signal })
+            await fetch(getUrl('links'), { signal: abortController.signal })
             .then((res) => res.json())
             .then((links) => setLinks(links))
 
@@ -83,7 +85,7 @@ export default function App() {
 
     /** Load projects data with language */
     async function loadProjectsLang(lang: string, abortController: AbortController){
-        await fetch(`/myData/projects/${lang}.json`, { signal: abortController.signal })
+        await fetch(getUrl(lang, '/projects'), { signal: abortController.signal })
         .then((res) => res.json())
         .then((data) => {
             setDataProjects(data)

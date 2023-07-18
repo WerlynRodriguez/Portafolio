@@ -1,4 +1,5 @@
 import { PieceInfo } from "./interfaces"
+import urlData from "../../urlData"
 
 export default function Piece(props: PieceInfo & { 
     index: number, 
@@ -11,7 +12,7 @@ export default function Piece(props: PieceInfo & {
         className='piece'
         style={{
             animationDelay: `${index * 0.1}s`,
-            backgroundImage: `url(/logos/${name}.svg)`,
+            backgroundImage: `url(${urlData}logos/${name}.svg)`,
             backgroundSize: '50%',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center'
