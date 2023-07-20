@@ -1,10 +1,10 @@
-# Portafolio
+# Portfolio
 
-## Introduccion
+## Introduction
 
-¡Bienvenido al repositorio de mi portafolio en GitHub!. 
-Aquí encontrarás una selección de mis proyectos y trabajos más destacados en el campo de desarrollo web / software. 
-Siéntete libre de explorar y no dudes en contactarme si tienes alguna pregunta o comentario.
+Welcome to the repository of my portfolio on GitHub! 
+Here you will find a selection of my most outstanding projects and works in the web / software development field. 
+Feel free to explore and feel free to contact me if you have any questions or comments.
 
 ## Tech Stack
 
