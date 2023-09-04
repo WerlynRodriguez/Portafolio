@@ -16,7 +16,8 @@
     {
         "skill": ["Expo", "i18next", "React", "TypeScript", "Yarn"],
         "url": {
-            "Github": "https://github.com/WerlynRodriguez/Rimember"
+            "Github": "https://github.com/WerlynRodriguez/Rimember",
+            "Googleplay": "https://play.google.com/store/apps/details?id=com.werlynDev.Rimember"
         }
     },
     {
