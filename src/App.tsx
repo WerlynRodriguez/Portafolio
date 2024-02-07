@@ -195,22 +195,6 @@ export default function App() {
             </ul>
         </section>
 
-        <section id='socials' className="bgBlur nopad">
-            <h2> {tr('Socials')} </h2>
-            <ul className="full-w wrapper">
-            {Object.keys(links.social ?? {}).map((link, index) => (
-                <Button
-                    key={`btnSocial${index}`}
-                    icon={link}
-                    className="bgBlur"
-                    onClick={() => window.open(links.social[link], '_blank')}
-                >
-                    {link}
-                </Button>
-            ))}
-            </ul>
-        </section>
-
         <section id="contact" className="full-w">
             <ShowCaseStrings
                 strings={getData('ContactBanner')}
