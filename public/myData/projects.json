@@ -39,9 +39,9 @@
         }
     },
     {
-        "skill": ["CSS3", "Express", "Node.js", "React", "ReactRouter", "Socket.io"],
+        "skill": ["Express", "Node.js", "React", "tailwindcss", "daisyui", "mongodb", "mongoose"],
         "url": {
-            "Github": "https://github.com/WerlynRodriguez/Byond"
+            "Github": "https://github.com/WerlynRodriguez/ActiviTracker"
         }
     }
 ]
