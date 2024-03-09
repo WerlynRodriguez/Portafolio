@@ -43,5 +43,11 @@
         "url": {
             "Github": "https://github.com/WerlynRodriguez/ActiviTracker"
         }
+    },
+    {
+        "skill": ["Nest.js", "Graphql", "mongodb", "mongoose"],
+        "url": {
+            "Github": "https://github.com/WerlynRodriguez/the-company-maker"
+        }
     }
 ]
