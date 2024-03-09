@@ -5,5 +5,6 @@
     ["Aplicación móvil de gestión de artesanías", "Aplicación desarrollada en 1 día, ganadora del 2do lugar, para una competencia frontend, organizada por RedSofa"],
     ["Sistema web Bancopoly", "Juego de gestión e intercambio de finanzas y propiedades entre usuarios, con sistema de notificaciones"],
     ["Página de inicio para tienda ficticia onShopLine", "Página de inicio de tienda online ficticia, con muestra de productos y buscador de productos"],
-    ["ActiviTracker", "Aplicación FullStack para el seguimiento de actividad de los usuarios con credenciales. Registrando el historial de los plazos activos en la app."]
+    ["ActiviTracker", "Aplicación FullStack para el seguimiento de actividad de los usuarios con credenciales. Registrando el historial de los plazos activos en la app."],
+    ["Company Maker", "Un proyecto para backend, que registra compañias y una lista de sus empleados mediante querys de Graphql."]
 ]
